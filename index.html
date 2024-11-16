@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panoramic Image Viewer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <link rel="stylesheet" href="static.css">
+
+</head>
+<body>
+    <div id="panorama">
+        <div id="degreeScale">0</div>
+        <div id="controls">
+            <div class="ctrl" id="pan-up" text="Pan Up">&#9650;</div>
+            <div class="ctrl" id="pan-down" text="Pan Down">&#9660;</div>
+            <div class="ctrl" id="pan-left" text="Pan Left">&#9664;</div>
+            <div class="ctrl" id="pan-right" text="Pan Right">&#9654;</div>
+            <div class="ctrl" id="zoom-in" text="Zoom In">&plus;</div>
+            <div class="ctrl" id="zoom-out" text="Zoom Out">&minus;</div>
+            <div class="ctrl" id="fullscreen" text="Fullscreen">&#x2922;</div>
+            <div class="ctrl" id="switch-panorama" text="Height">&#8230;
+               <div class="popup-container one" id="popup-container-1">
+                    <div class="popup-window">
+                        <img src="5.0.JPG" alt="Image 1" id="image-1" >
+                        <div class="popup-window-text">360°</div>
+                    </div>
+                </div>
+
+               <div class="popup-container two" id="popup-container-2">
+                    <div class="popup-window">
+                        <img src="5.0.JPG" alt="Image 2" id="image-2">
+                        <div class="popup-window-text">5.0m</div>
+                    </div>
+                </div>
+            
+                <div class="popup-container three" id="popup-container-3">
+                    <div class="popup-window">
+                        <img src="7.5.JPG" alt="Image 3" id="image-3">
+                        <div class="popup-window-text">7.5m</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>    
+    </div>
+    <script src="javascript.js"></script>  
+</body>
+</html>
